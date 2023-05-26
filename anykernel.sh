@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Twilight Kernel by Tkiliay
+kernel.string=Twilight Kernel with kernelsu by Tkiliay
 do.devicecheck=1
 do.modules=0
 do.systemless=1
