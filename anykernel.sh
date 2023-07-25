@@ -42,7 +42,7 @@ patch_vbmeta_flag=auto;
 dump_boot; # use split_boot to skip ramdisk unpack, e.g. for devices with init_boot ramdisk
 
 # Override DTB
-mv $home/dtb $home/split_img/;
+#mv $home/dtb $home/split_img/;
 
 # init.tuna.rc
 backup_file init.tuna.rc;
@@ -98,17 +98,17 @@ write_boot; # use flash_boot to skip ramdisk repack, e.g. for devices with init_
 ## end vendor_kernel_boot install
 
 ## vendor_boot shell variables
-block=vendor_boot;
-is_slot_device=1;
-ramdisk_compression=auto;
-patch_vbmeta_flag=auto;
+#block=vendor_boot;
+#is_slot_device=1;
+#ramdisk_compression=auto;
+#patch_vbmeta_flag=auto;
 
 # reset for vendor_boot patching
-reset_ak;
+#reset_ak;
 
 # vendor_boot install
-dump_boot; # use split_boot to skip ramdisk unpack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
+#dump_boot; # use split_boot to skip ramdisk unpack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
 
-write_boot; # use flash_boot to skip ramdisk repack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
+#write_boot; # use flash_boot to skip ramdisk repack, e.g. for dtb on devices with hdr v4 but no vendor_kernel_boot
 ## end vendor_boot install
 
